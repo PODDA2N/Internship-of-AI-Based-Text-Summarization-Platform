@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Text Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Text Summarization Platform</h1>
+
+    <!-- Text Input -->
+    <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+
+    <!-- OR Divider -->
+    <p>OR</p>
+
+    <!-- File Upload -->
+    <input type="file" id="fileInput" accept=".pdf">
+
+    <!-- Button -->
+    <button onclick="summarizeText()">Summarize</button>
+
+    <!-- Loading -->
+    <p id="loading" style="display:none;">Processing...</p>
+
+    <!-- Output -->
+    <div id="output">
+        <h2>Summary:</h2>
+        <p id="summaryText"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
